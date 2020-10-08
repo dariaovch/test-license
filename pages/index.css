@@ -20,7 +20,7 @@
 
 .window {
     max-width: 370px;
-    max-height: 380px;
+    height: 380px;
     border: 8px solid #ececec;
     background-color: #f8f8f8;
     display: flex;
@@ -29,7 +29,26 @@
 }
 
 .window__form {
+    visibility: visible;
     margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    justify-content: space-around;
+}
+
+.window__form_submitted {
+    visibility: hidden;
+}
+
+.window__payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.window__payment_inactive {
+    display: none;
 }
 
 .window__input-container{
@@ -38,22 +57,52 @@
     justify-content: start;
 }
 
+.window__input-container .input[type=radio]:checked + .label:before {
+    background-color: #ebf4f7;
+    border: 1px solid lightblue;
+}
+
 .window__input-label{
     display: flex;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 .window__input-cost {
     margin: 0 0 0 120px;
+    font-size: 12px;
 }
 
 .window__input {
 
 }
 
+.window__select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .window__submit-button {
     background-color: #00b346;
+    color: #ffffff;
+    font-size: 15px;
     border: none;
-    border-radius: 50%;
-    max-width: 115px;
+    border-radius: 20px;
+    width: 115px;
+    height: 30px;
+}
+
+.window__input-name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.window__total {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.window__sum {
+    color: #0096c3;
 }

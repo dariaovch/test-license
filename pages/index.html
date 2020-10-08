@@ -9,7 +9,7 @@
     <body class="page">
         <div class="page__container">
             <div class="window">
-                <form class="window__form">
+                <form class="window__form" name="licenses" method='POST'>
                     <div class="window__input-container">
                        <input class="window__input window__input_type_radio" type="radio" name="license-type" value="13" id="license-13" checked>
                        <label for="license-13" class="window__input-label"><span class="window__input-name">LICENSEPLAN #1</span><p class="window__input-cost">$13 per license</p></label>
@@ -19,28 +19,34 @@
                         <label for="license-22" class="window__input-label"><span class="window__input-name">LICENSEPLAN #2</span><p class="window__input-cost">$22 per license</p></label>
                     </div>
                     <div class="window__input-container">
-                        <input class="window__input window__input_type_radio" type="radio" name="license-type" value="13" id="license-34">
+                        <input class="window__input window__input_type_radio" type="radio" name="license-type" value="34" id="license-34">
                         <label for="license-34" class="window__input-label"><span class="window__input-name">LICENSEPLAN #3</span><p class="window__input-cost">$34 per license</p></label>
                     </div>
                     <hr />
+                    <div class="window__select-container">
                     <label for="select" class="window__select-label">Number of licenses: </label>
                     <select class="window__input_type_select" id="select">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
+                        <option class="window__input_type_option" value="1">1</option>
+                        <option class="window__input_type_option" value="2">2</option>
+                        <option class="window__input_type_option" value="3">3</option>
+                        <option class="window__input_type_option" value="4">4</option>
+                        <option class="window__input_type_option" value="5">5</option>
+                        <option class="window__input_type_option" value="6">6</option>
+                        <option class="window__input_type_option" value="7">7</option>
+                        <option class="window__input_type_option" value="8">8</option>
+                        <option class="window__input_type_option" value="9">9</option>
+                        <option class="window__input_type_option" value="10">10</option>
                     </select>
+                    </div>
                     <hr />
-                    <p class="window__total">TOTAL: <span class="window__sum"></span></p>
-                    <button class="window__submit-button">BUY NOW</button>
-                    <p class="window__plan"></p>
+                    <p class="window__total">TOTAL: <span class="window__sum">$13US</span></p>
+                    <button class="window__submit-button" type='submit'>BUY NOW</button>
+                    <p class="window__plan">Selected plan: #1</p>
                 </form>
+                <div class="window__payment window__payment_inactive">
+                    <h2 class="window__to-pay"><span class="window__sum-to-pay"></span> TO PAY</h2>
+                    <p class="window__to-fill">Please submit your order...</p>
+                </div>
             </div>
         </div>
         <script src="./index.js"></script>
