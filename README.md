@@ -1,5 +1,7 @@
 # Окно покупки лицензий
 
+Ссылка: https://dariaovch.github.io/test-license/.
+
 ## Технологический стек
 
 * HTML;
