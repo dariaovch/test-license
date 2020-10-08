@@ -1,0 +1,28 @@
+@import url(./__form/window__form.css);
+@import url(./__form/_submitted/window__form_submitted.css);
+@import url(./__input-container/window__input-container.css);
+@import url(./__input-cost/window__input-cost.css);
+@import url(./__input-label/window__input-label.css);
+@import url(./__input-name/window__input-name.css);
+@import url(./__input/window__input.css);
+@import url(./__input/_type/window__input_type_radio.css);
+@import url(./__input/_type/window__input_type_select.css);
+@import url(./__payment/window__payment.css);
+@import url(./__payment/_inactive/window__payment_inactive.css);
+@import url(./__plan/window__plan.css);
+@import url(./__select-container/window__select-container.css);
+@import url(./__select-label/window__select-label.css);
+@import url(./__submit-button/window__submit-button.css);
+@import url(./__sum-to-pay/window__sum-to-pay.css);
+@import url(./__sum/window__sum.css);
+@import url(./__total/window__total.css);
+
+.window {
+    max-width: 370px;
+    border: 8px solid #ececec;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}

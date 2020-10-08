@@ -1,5 +1,13 @@
 @font-face {
     font-family: 'Bebas';
-    src: url(./BebasNeue-Regular.ttf) format('ttf');
+    src: url(./BebasNeueRegular.woff) format('woff'),
+         url(./BebasNeueRegular.woff2) format('woff2');
     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(./BebasNeueBold.woff) format('woff'),
+         url(./BebasNeueBold.woff2) format('woff2');
+    font-weight: bold;
 }

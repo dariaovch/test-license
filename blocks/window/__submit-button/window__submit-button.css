@@ -1,0 +1,14 @@
+.window__submit-button {
+    background-color: #00b346;
+    color: #ffffff;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 115px;
+    height: 30px;
+    transition: opacity .4s linear;
+}
+
+.window__submit-button:hover {
+    opacity: .7;
+}

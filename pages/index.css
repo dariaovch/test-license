@@ -1,108 +1,14 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/window/window.css);
 
-.page {
-    background-color: #ffffff;
-    color: #878687;
-    font-family: 'Bebas', 'Arial', 'Helvetica', sans-serif;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-}
-
-.page__container {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.window {
-    max-width: 370px;
-    height: 380px;
-    border: 8px solid #ececec;
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.window__form {
-    visibility: visible;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 380px;
-    justify-content: space-around;
-}
-
-.window__form_submitted {
-    visibility: hidden;
-}
-
-.window__payment {
-    display: flex;
-    flex-direction: column;
-}
-
-.window__payment_inactive {
-    display: none;
-}
-
-.window__input-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.window__input-container .input[type=radio]:checked + .label:before {
-    background-color: #ebf4f7;
-    border: 1px solid lightblue;
-}
-
-.window__input-label{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-}
-
-.window__input-cost {
-    margin: 0 0 0 120px;
-    font-size: 12px;
-}
-
-.window__input {
-
-}
-
-.window__select-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.window__submit-button {
-    background-color: #00b346;
-    color: #ffffff;
-    font-size: 15px;
-    border: none;
-    border-radius: 20px;
-    width: 115px;
-    height: 30px;
-}
-
-.window__input-name {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.window__total {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.window__sum {
+sup {
     color: #0096c3;
+    font-size: 14px;
+}
+
+hr {
+    width: 334px;
+    color:  #ececec;
 }

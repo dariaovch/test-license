@@ -1,0 +1,7 @@
+.window__input-container {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}

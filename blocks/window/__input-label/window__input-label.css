@@ -1,0 +1,5 @@
+.window__input-label{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}

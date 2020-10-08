@@ -35,20 +35,19 @@ function countTotal() {
 //Слушатель события 'change' для формы
 document.forms.licenses.addEventListener('change', () => {
     let total = countTotal();
-    sum.textContent = `$${total}US`;
+    sum.textContent = `$${total}`;
 })
 
 
-
-const submitButton = document.querySelector('.window__submit-button');
-
+//Функция-обработчик сабмита формы
 function handleSubmitForm() {
     document.forms.licenses.classList.add('window__form_submitted');
     document.querySelector('.window__payment').classList.remove('window__payment_inactive');
 }
 
+//Добавляем слушатель события submit для формы
 document.forms.licenses.addEventListener('submit', (evt) => {
     evt.preventDefault();
-    document.querySelector('.window__sum-to-pay').textContent = `$${countTotal()}US`
+    document.querySelector('.window__sum-to-pay').textContent = `$${countTotal()}`
     handleSubmitForm();
 })
