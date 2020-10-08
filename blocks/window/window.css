@@ -21,6 +21,7 @@
     max-width: 370px;
     border: 8px solid #ececec;
     background-color: #f8f8f8;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;

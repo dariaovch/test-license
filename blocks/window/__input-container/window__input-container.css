@@ -5,3 +5,8 @@
     align-items: center;
     position: relative;
 }
+
+.window__input-container_active {
+    background-color: #eaf4f7;
+    border: 1px solid rgba(0, 149, 195, .5);
+}

@@ -1,3 +1,6 @@
+//Массив радиокнопок
+const radio = document.getElementsByName('license-type');
+
 //Константа для отображения итоговой суммы
 const sum = document.querySelector('.window__sum');
 const selectedPlan = document.querySelector('.window__plan');
@@ -7,14 +10,25 @@ const select = document.querySelector('.window__input_type_select');
 
 //Получаем значение выбранной радиокнопки
 function getRadioValue() {
-    const radio = document.getElementsByName('license-type');
      for (let i=0; i<radio.length; i++) {
          if(radio[i].checked) {
              selectedPlan.textContent = `Selected plan: #${i+1}`;
              return radio[i].value;
-         }
+         } 
      }
+     
  }
+
+//Выделение выбранной строки в массиве радиокнопок
+document.forms.licenses.addEventListener('change', () => {
+    radio.forEach((item) => {
+    if(item.checked) {
+         item.closest('.window__input-container').classList.add('window__input-container_active');
+         } else {
+    item.closest('.window__input-container').classList.remove('window__input-container_active');
+    }
+});
+});
 
  //Получаем значение выбранного количества лицензий
 select.onChange = () => {
